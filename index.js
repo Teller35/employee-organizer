@@ -3,6 +3,7 @@ const inquirer = require('inquirer');
 const cTable = require('console.table');
 
 async function getStarted () {
+
     const { tableDb } = await inquirer.prompt({
         type: 'list',
         name: 'tableDb',
@@ -38,13 +39,17 @@ async function getStarted () {
 
 async function viewDepartments () {
     const department = await db.promise().query(`SELECT * FROM departments`);
+    console.log('=====================');
     console.table(department[0]);
+    console.log('=====================');
     getStarted();
 };
 
 async function viewRoles () {
     const roles = await db.promise().query(`SELECT * FROM roles`);
+    console.log('=======================================');
     console.table(roles[0]);
+    console.log('=======================================');
     getStarted();
 };
 
@@ -54,7 +59,9 @@ async function viewEmployees () {
     LEFT JOIN employees manager ON manager.id = employees.manager_id 
     LEFT JOIN roles ON employees.role_id = roles.id 
     LEFT JOIN departments ON departments.id = roles.department_id`);
+    console.log('=================================================================================');
     console.table(employee[0]);
+    console.log('=================================================================================');
     getStarted();
 };
 
@@ -66,7 +73,9 @@ async function addDepartment () {
     });
     let response = addDepartment.newDepartment;
     await db.promise().query(`INSERT INTO departments(name) VALUEs (?)`, response);
+    console.log('==============================================');
     console.log(`The new ${response} department was added!`);
+    console.log('==============================================');
     getStarted();
 };
 
@@ -101,7 +110,9 @@ async function addRole () {
 
     let response = [newRole.title, newRole.salary, newRole.department];
     await db.promise().query(`INSERT INTO roles(title, salary, department_id) VALUES (?,?,?)`, response);
+    console.log('==============================================');
     console.log(`The new role of ${newRole.title} has been added!`);
+    console.log('==============================================');
     getStarted();
 }
 
@@ -149,7 +160,9 @@ async function addEmployee () {
     ]);
     const response = [newEmployee.firstName, newEmployee.lastName, newEmployee.role, newEmployee.manager];
     await db.promise().query(`INSERT INTO employees(first_name, last_name, role_id, manager_id) VALUES (?,?,?,?)`, response);
+    console.log('=====================================================');
     console.log(`New employee ${newEmployee.firstName} has been added to the team!`);
+    console.log('=====================================================');
     getStarted();
 };
 
@@ -188,7 +201,9 @@ async function updateEmployee () {
     ]);
 
     await db.promise().query(`UPDATE employees SET role_id = ? WHERE id = ?`, [roleId, employeeId]);
+    console.log('===================');
     console.log('Updated employee!');
+    console.log('===================');
     getStarted();
 }
 
