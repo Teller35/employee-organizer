@@ -1,6 +1,6 @@
 # Employee Organizer
 
-  [![License Badge](https://img.shields.io/badge/license--blue.svg)](#license)
+  [![License Badge](https://img.shields.io/badge/license-ISC-blue.svg)](#license)
 
   ## Description:
   #### *This is a simple app to keep track of your team using different tables and data input*
@@ -29,7 +29,7 @@
 
   ## License
   #### *This project is covered under the  license!*
-  #### *[License Link](https://choosealicense.com/licenses/)*
+  #### *[License Link](https://choosealicense.com/licenses/isc)*
 
   ## Contribute
   #### *NONE*
