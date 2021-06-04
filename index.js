@@ -9,41 +9,41 @@ async function getStarted () {
         type: 'list',
         name: 'tableDb',
         message: 'What would you like to do?',
-        choices: ['View Departments', 'View Roles', 'View Employees', 'Add Department', 'Remove Department', 'Add Role', 'Remove Role', 'Add Employee', 'Update Employee Role', 'Remove Employee', 'Exit']
+        choices: ['View Departments', 'Add Department', 'Remove Department', 'View Roles', 'Add Role', 'Remove Role', 'View Employees', 'Add Employee', 'Update Employee Role', 'Remove Employee', 'Exit']
     });
     switch (tableDb) {
         case 'View Departments':
-            viewDepartments();
-            break;
-        case 'View Roles':
-            viewRoles();
-            break;
-        case 'View Employees':
-            viewEmployees();
-            break;
+              viewDepartments();
+              break;
         case 'Add Department':
-            addDepartment();
-            break;
+              addDepartment();
+              break;
         case 'Remove Department':
-            removeDepartment();
-            break;
+              removeDepartment();
+              break;
+        case 'View Roles':
+              viewRoles();
+              break;
         case 'Add Role':
-            addRole();
-            break;
+              addRole();
+              break;
         case 'Remove Role':
-            removeRole();
-            break;
+              removeRole();
+              break;
+        case 'View Employees':
+              viewEmployees();
+              break;
         case 'Add Employee':
-            addEmployee();
-            break;
+             addEmployee();
+             break;
         case 'Update Employee Role':
-            updateEmployee();
-            break;
+             updateEmployee();
+             break;
         case 'Remove Employee':
-            removeEmployee();
-            break;
+             removeEmployee();
+             break;
         default:
-            process.exit();
+             process.exit();
     }
 };
 
