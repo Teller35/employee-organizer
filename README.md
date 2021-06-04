@@ -5,6 +5,7 @@
   ## Description:
   #### *This is a simple app to keep track of your team using different tables and data input*
   *[View Project on GitHub](https://github.com/teller35/employee-organizer)*
+  *[View Walktrough](https://drive.google.com/file/d/1Zt_SkS5shAIiIz_iOeE-y-RUMocZMJks/view?usp=sharing)*
 
   ## Table of Contents:
   * [**Installation**](#installation)
@@ -23,6 +24,10 @@
 
   ## Usage
   #### *Run 'node start' in your terminal and follow instructions*
+![image](https://user-images.githubusercontent.com/79383305/120849140-ea027b80-c532-11eb-9f62-eb95a93a86f1.png)
+![image](https://user-images.githubusercontent.com/79383305/120849168-f2f34d00-c532-11eb-87a2-65b25f8b8d84.png)
+![image](https://user-images.githubusercontent.com/79383305/120849201-fa1a5b00-c532-11eb-8e10-7564acdad0e2.png)
+![image](https://user-images.githubusercontent.com/79383305/120849220-01416900-c533-11eb-9389-ad1d0f7bacc1.png)
 
   ## Credits
   #### *NONE*

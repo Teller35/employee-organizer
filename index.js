@@ -85,7 +85,7 @@ async function addDepartment () {
     let response = addDepartment.newDepartment;
     await db.promise().query(`INSERT INTO departments(name) VALUEs (?)`, response);
     console.log('_______________________________________________');
-    console.log(`The new ${response} department was added!`);
+    console.log(`---The new ${response} department was added!---`);
     console.log('_______________________________________________');
     getStarted();
 };
@@ -149,7 +149,7 @@ async function addRole () {
     let response = [newRole.title, newRole.salary, newRole.department];
     await db.promise().query(`INSERT INTO roles(title, salary, department_id) VALUES (?,?,?)`, response);
     console.log('____________________________________________________');
-    console.log(`The new role of ${newRole.title} has been added!`);
+    console.log(`---The new role of ${newRole.title} has been added!---`);
     console.log('____________________________________________________');
     getStarted();
 };
@@ -226,7 +226,7 @@ async function addEmployee () {
     const response = [newEmployee.firstName, newEmployee.lastName, newEmployee.role, newEmployee.manager];
     await db.promise().query(`INSERT INTO employees(first_name, last_name, role_id, manager_id) VALUES (?,?,?,?)`, response);
     console.log('____________________________________________________________________');
-    console.log(`New employee ${newEmployee.firstName} has been added to the team!`);
+    console.log(`---New employee ${newEmployee.firstName} has been added to the team!---`);
     console.log('____________________________________________________________________');
     getStarted();
 };
@@ -267,7 +267,7 @@ async function updateEmployee () {
 
     await db.promise().query(`UPDATE employees SET role_id = ? WHERE id = ?`, [roleId, employeeId]);
     console.log('_____________________');
-    console.log('Updated employee!');
+    console.log('---Updated employee!---');
     console.log('_____________________');
     getStarted();
 };
