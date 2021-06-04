@@ -2,6 +2,7 @@ const db = require('./db/connection');
 const inquirer = require('inquirer');
 const cTable = require('console.table');
 
+// Array of questions
 async function getStarted () {
 
     const { tableDb } = await inquirer.prompt({
@@ -45,6 +46,7 @@ async function getStarted () {
             process.exit();
     }
 };
+
 
 async function viewDepartments () {
     const department = await db.promise().query(`SELECT * FROM departments`);
