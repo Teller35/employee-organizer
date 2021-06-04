@@ -23,7 +23,7 @@
   
 
   ## Usage
-  #### *Run 'node start' in your terminal and follow instructions*
+  #### *Run 'npm start' in your terminal and follow instructions*
 ![image](https://user-images.githubusercontent.com/79383305/120849140-ea027b80-c532-11eb-9f62-eb95a93a86f1.png)
 ![image](https://user-images.githubusercontent.com/79383305/120849168-f2f34d00-c532-11eb-87a2-65b25f8b8d84.png)
 ![image](https://user-images.githubusercontent.com/79383305/120849201-fa1a5b00-c532-11eb-8e10-7564acdad0e2.png)
